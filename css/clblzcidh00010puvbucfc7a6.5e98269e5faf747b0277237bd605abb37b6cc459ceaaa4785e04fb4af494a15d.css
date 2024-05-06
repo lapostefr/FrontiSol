@@ -1,0 +1,111 @@
+._empty-container_139er_1 {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:1rem;
+  gap:.5rem
+}
+._empty-container_139er_1>div>*+* {
+  margin-top:.5rem
+}
+._example-text__wrapper_1lfpl_1 {
+  flex-basis:0;
+  flex-grow:999;
+  min-inline-size:52%
+}
+._example-text_1lfpl_1 {
+  font-size:1.5rem;
+  line-height:1.75rem;
+  pointer-events:none;
+  max-width:400px;
+  text-align:left
+}
+._example-text_1lfpl_1 svg {
+  display:inline
+}
+._example-text--blurred_1lfpl_19 {
+  filter:blur(3px);
+  opacity:.2;
+  padding-top:4rem;
+  padding-bottom:4rem
+}
+._example-text__wrapper_1lfpl_1 div[data-test-id=editable-node-container] {
+  display:inline-flex;
+  padding:0
+}
+._example-text__edit-wrapper_1lfpl_31 {
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  margin-left:3rem
+}
+._style-entry__wrapper_1kvhl_1 {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:1rem
+}
+._style-entry__container_1kvhl_8 {
+  padding-left:1rem;
+  border-left:1px solid #eaebeb;
+  flex-basis:280px;
+  flex-grow:1;
+  max-width:400px
+}
+._style-entry__header_1kvhl_16 {
+  flex-grow:1
+}
+._style-entry__header_1kvhl_16 button {
+  text-align:left
+}
+._style-entry__header_1kvhl_16 div[data-test-id=editable-node-container] {
+  justify-content:flex-start;
+  display:inline-flex
+}
+._range-setting_37hbt_1 {
+  border-top:1px solid #eaebeb;
+  padding-top:.5rem;
+  padding-bottom:.5rem
+}
+._range-setting__title_37hbt_7 {
+  display:flex;
+  justify-content:space-between
+}
+._range-setting__value-bar_37hbt_12 {
+  display:flex;
+  padding-top:.25rem;
+  justify-content:space-between
+}
+._range-setting__value-field_37hbt_18 {
+  flex:0 1 33.33333333333%
+}
+._range-setting__value-field_37hbt_18 button {
+  text-align:right
+}
+._range-setting__value-field_37hbt_18 div[data-test-id=editable-node-container] {
+  display:inline-flex;
+  padding:0
+}
+._range-setting__value-field_37hbt_18:nth-child(1) div[data-test-id=editable-node-container] {
+  justify-content:flex-start
+}
+._range-setting__value-field_37hbt_18:nth-child(2) div[data-test-id=editable-node-container] {
+  justify-content:center
+}
+._range-setting__value-field_37hbt_18:nth-child(3) div[data-test-id=editable-node-container] {
+  justify-content:flex-end
+}
+._container_1s8ir_1 {
+  position:relative
+}
+._styles-container_1s8ir_5>*+* {
+  margin-top:2rem
+}
+._style-container_1s8ir_9>*+* {
+  margin-top:2rem
+}

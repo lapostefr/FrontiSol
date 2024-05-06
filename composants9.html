@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <title>Frontify Solaris</title>
+    <link href="/css/frontify-common.ee2800e944962286595c.css" rel="stylesheet">
+    <link href="/css/frontify-guideline.889f8602284d7c7470b6.css" rel="stylesheet">
+    <link href="/css/frontify-vendors.14dcfa7baac629ddfbe5.css" rel="stylesheet">
+    <title>Vue d&#039;ensemble - Solaris</title>
+    <!-- Favicon -->
+    <link href="./img/eyJwYXRoIjoibGEtcG9zdGVcL2ZpbGVcLzhSRUM0SDZQQUhvVTVOY0pmY0JlLnBuZyJ9-la-poste-utNfjZUu23UhC1I1bNAAJuliADFzk6aszy6KI5cxzFw.png"
+          rel="icon"
+          type="image/x-icon"/>
+    <!-- This product is built using third-party software, as described here: https://app.frontify.com/licenses.md -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="./css/frontify-vendors.14dcfa7baac629ddfbe5.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="./css/frontify-common.ee2800e944962286595c.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="./css/frontify-guideline.889f8602284d7c7470b6.css" rel="stylesheet"
+          type="text/css"/>
+    <meta content="d3492c43eccdd89fa748d39ba8b9b8cd31dd860d237063b992f39e204ba907d9" name="x-csrf-token">
+    <meta content="Vue d&#039;ensemble" property="og:title"/>
+    <meta content="A Powerful Brand Powered by Frontify" property="og:description"/>
+    <style class="hub-appearance-css"
+           type="text/css">.a-p, .page-content .block, .co-editor, .cm-setting-typostyle__label--body, .cm-setting-typostyle__preview--body {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(60, 60, 60);
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        letter-spacing: normal;
+    }
+
+    .a-h1, .page-content .page-title, .co-editor h1, .co-editor h1, .cm-setting-typostyle__label--heading1, .cm-setting-typostyle__preview--heading1, .quill-h1, .a-image-caption h1 {
+        font-family: "Montserrat", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(60, 60, 60);
+        font-size: 38px;
+        line-height: 1.3;
+        font-weight: 700;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+        letter-spacing: normal;
+    }
+
+    .a-h2, .page-content .block h2, .page-content .section-title, .co-editor h2, .co-editor h2, .cm-setting-typostyle__label--heading2, .cm-setting-typostyle__preview--heading2, .quill-h2, .a-image-caption h2 {
+        font-family: "Montserrat", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(60, 60, 60);
+        font-size: 28px;
+        line-height: 1.3;
+        font-weight: 700;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+        letter-spacing: normal;
+    }
+
+    .a-h3, .page-content .block h3, .co-editor h3, .cm-setting-typostyle__label--heading3, .cm-setting-typostyle__preview--heading3, .quill-h3, .a-image-caption h3 {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(60, 60, 60);
+        font-size: 22px;
+        line-height: 1.3;
+        font-weight: 700;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+        letter-spacing: normal;
+    }
+
+    .a-h4, .page-content .block h4, .co-editor h4, .cm-setting-typostyle__label--heading4, .cm-setting-typostyle__preview--heading4, .quill-h4, .a-image-caption h4 {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(60, 60, 60);
+        font-size: 16px;
+        line-height: 1.3;
+        font-weight: 700;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+        letter-spacing: normal;
+    }
+
+    .o-collection-area__title, .o-library__assets-title, .o-library__document-category-title {
+        font-family: "Montserrat", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(60, 60, 60);
+        font-size: 18px;
+        line-height: 1.3;
+        font-weight: 700;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        letter-spacing: normal;
+    }
+
+    .a-custom1, .co-editor .custom1, .cm-setting-typostyle__label--custom1, .cm-setting-typostyle__preview--custom1, .quill-custom1, .a-image-caption .custom1 {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(53, 97, 198);
+        font-size: 16px;
+        line-height: 1.3;
+        font-weight: 100;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+        letter-spacing: normal;
+    }
+
+    .a-custom2, .co-editor .custom2, .cm-setting-typostyle__label--custom2, .cm-setting-typostyle__preview--custom2, .quill-custom2, .a-image-caption .custom2 {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(182, 11, 11);
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+        letter-spacing: normal;
+    }
+
+    .a-custom3, .co-editor .custom3, .cm-setting-typostyle__label--custom3, .cm-setting-typostyle__preview--custom3, .quill-custom3, .a-image-caption .custom3 {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(8, 158, 27);
+        font-size: 16px;
+        line-height: 1.3;
+        font-weight: 500;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+        letter-spacing: normal;
+    }
+
+    .a-quote, .page-content .block .quote, .cm-setting-typostyle__label--quote, .co-editor blockquote, .co-editor blockquote .link, .cm-setting-typostyle__preview--quote, .quill-blockquote, .a-image-caption blockquote {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(103, 103, 103);
+        font-size: 24px;
+        line-height: 1.3;
+        font-weight: normal;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-bottom: 10px;
+        letter-spacing: normal;
+    }
+
+    .a-image-title, .page-content .block .a-image-title, .cm-setting-typostyle__label--image-title, .cm-setting-typostyle__preview--image-title {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(60, 60, 60);
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 3px;
+        letter-spacing: normal;
+    }
+
+    .a-image-caption, .page-content .block .a-image-caption, .co-editor--image-caption, .cm-setting-typostyle__label--image-caption, .cm-setting-typostyle__preview--image-caption {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(102, 102, 102);
+        font-size: 12px;
+        line-height: 1.5;
+        font-weight: 400;
+        text-transform: none;
+        font-style: italic;
+        text-decoration: none;
+        letter-spacing: normal;
+        position: relative;
+    }
+
+    .a-link, .mod-block-text .richtext a, .co-editor .link, .cm-setting-typostyle__label--link, .cm-setting-typostyle__preview--link, .a-image-caption .link, .a-image-title .link {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(74, 144, 226);
+        font-size: 15px;
+        line-height: 1.3;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        letter-spacing: normal;
+    }
+
+    .a-link--color, .ffy-lnk, .o-medialibrary__filter-selected, .o-medialibrary__filter-radio:checked ~ .o-medialibrary__filter-bubble, .b-imagegrid__desc .link, .b-image__caption .link {
+        color: rgb(74, 144, 226);
+    }
+
+    .cm-setting-typostyle__label--body, .cm-setting-typostyle__preview--body, .cm-setting-typostyle__label--documents, .cm-setting-typostyle__preview--documents, .cm-setting-typostyle__label--categories, .cm-setting-typostyle__preview--categories, .cm-setting-typostyle__label--pages, .cm-setting-typostyle__preview--pages, .cm-setting-typostyle__label--sections, .cm-setting-typostyle__preview--sections, .cm-setting-typostyle__label--heading1, .cm-setting-typostyle__preview--heading1, .cm-setting-typostyle__label--heading2, .cm-setting-typostyle__preview--heading2, .cm-setting-typostyle__label--heading3, .cm-setting-typostyle__preview--heading3, .cm-setting-typostyle__label--heading4, .cm-setting-typostyle__preview--heading4, .cm-setting-typostyle__label--custom1, .cm-setting-typostyle__preview--custom1, .cm-setting-typostyle__label--custom2, .cm-setting-typostyle__preview--custom2, .cm-setting-typostyle__label--custom3, .cm-setting-typostyle__preview--custom3, .cm-setting-typostyle__label--link, .cm-setting-typostyle__preview--link, .cm-setting-typostyle__label--quote, .cm-setting-typostyle__preview--quote, .cm-setting-typostyle__label--image-title, .cm-setting-typostyle__preview--image-title, .cm-setting-typostyle__label--image-caption, .cm-setting-typostyle__preview--image-caption {
+        line-height: 1;
+        margin: 0;
+    }
+
+    .mod-block-callout .callout-warning {
+        border-color: rgba(222, 105, 0, 1.00);
+        background: rgba(222, 105, 0, 0.1);
+        color: rgba(222, 105, 0, 1.00);
+    }
+
+    .mod-block-callout .callout-warning a:not(.btn), .mod-block-callout .callout-warning h3 {
+        color: rgba(222, 105, 0, 1.00);
+    }
+
+    .mod-block-callout .callout-info {
+        border-color: rgba(28, 140, 203, 1.00);
+        background: rgba(28, 140, 203, 0.1);
+        color: rgba(28, 140, 203, 1.00);
+    }
+
+    .mod-block-callout .callout-info a:not(.btn), .mod-block-callout .callout-info h3 {
+        color: rgba(28, 140, 203, 1.00);
+    }
+
+    .mod-block-callout .callout-note {
+        border-color: rgba(148, 148, 148, 1.00);
+        background: rgba(148, 148, 148, 0.1);
+        color: rgba(148, 148, 148, 1.00);
+    }
+
+    .mod-block-callout .callout-note a:not(.btn), .mod-block-callout .callout-note h3 {
+        color: rgba(148, 148, 148, 1.00);
+    }
+
+    .mod-block-callout .callout-tip {
+        border-color: rgba(8, 158, 27, 1.00);
+        background: rgba(8, 158, 27, 0.1);
+        color: rgba(8, 158, 27, 1.00);
+    }
+
+    .mod-block-callout .callout-tip a:not(.btn), .mod-block-callout .callout-tip h3 {
+        color: rgba(8, 158, 27, 1.00);
+    }
+
+    .a-navigation-categories, .document-sidebar .nav-pages h4, .cm-setting-typostyle__preview--categories, .cm-setting-typostyle__label--categories {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 11px;
+        line-height: 1.3;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-style: normal;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    .m-navdocuments__mobile-category-title {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-weight: 700;
+        text-transform: uppercase;
+        font-style: normal;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    .a-navigation-pages, .document-sidebar .nav-pages .item > a, .cm-setting-typostyle__preview--pages, .cm-setting-typostyle__label--pages, .document-sidebar .nav-pages .item > a > i {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(85, 85, 85);
+        font-size: 13px;
+        line-height: 1.3;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: normal;
+        letter-spacing: 0;
+        hyphens: none;
+        -webkit-hyphens: none;
+    }
+
+    .m-navdocuments__mobile-page-link {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: normal;
+        letter-spacing: 0;
+    }
+
+    .a-navigation-pages, .document-sidebar .nav-pages .item > a:hover, .document-sidebar .nav-pages .item > a:hover > i {
+        color: rgb(85, 85, 85);
+        background: rgb(248, 248, 248);
+        font-size: 13px;
+        line-height: 1.3;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        letter-spacing: 0;
+    }
+
+    .a-navigation-pages, .document-sidebar .nav-pages .item.item-active > a, .document-sidebar .nav-pages .item.item-active > a > i {
+        color: rgb(85, 85, 85);
+        background: rgba(0, 0, 0, 0);
+        font-size: 13px;
+        line-height: 1.3;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        letter-spacing: 0;
+    }
+
+    .a-navigation-pages--active, .document-sidebar .nav-pages .item-active > a {
+        font-weight: 700;
+    }
+
+    .a-navigation-sections, .document-sidebar .nav-sections > li > a, .cm-setting-typostyle__preview--sections, .cm-setting-typostyle__label--sections {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgba(136, 136, 136, 1);
+        font-size: 13px;
+        line-height: 1.3;
+        font-weight: normal;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        letter-spacing: normal;
+    }
+
+    .a-button-primary, .a-button-secondary, .a-button-tertiary, .cm-setting-button__button--button_primary, .cm-setting-button__instant-preview-button--button_primary, .btn-primary, .cm-setting-button__button--button_secondary, .cm-setting-button__instant-preview-button--button_secondary, .btn-secondary, .cm-setting-button__button--button_tertiary, .cm-setting-button__instant-preview-button--button_tertiary, .btn-tertiary {
+        display: inline-block;
+        border-style: solid;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+    }
+
+    .a-button-primary, .cm-setting-button__button--button_primary, .cm-setting-button__instant-preview-button--button_primary, .btn-primary {
+        font-family: "Montserrat", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        line-height: 1.0;
+        font-weight: 600;
+        text-transform: none;
+        font-style: normal;
+        border-width: 0px;
+        border-radius: 8px;
+        border-color: rgb(255, 201, 5);
+        background-color: rgb(0, 61, 165);
+        padding-top: 16px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+    }
+
+    .a-button-primary:hover, .a-button-primary:active, .btn-primary:hover, .btn-primary:active {
+        color: rgb(60, 60, 60);
+        border-color: rgb(255, 183, 4);
+        background-color: rgb(255, 183, 4);
+    }
+
+    .a-button-secondary, .cm-setting-button__button--button_secondary, .cm-setting-button__instant-preview-button--button_secondary, .btn-secondary {
+        font-family: "Montserrat", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(60, 60, 60);
+        font-size: 16px;
+        line-height: 1.0;
+        font-weight: 600;
+        text-transform: none;
+        font-style: normal;
+        border-width: 1px;
+        border-radius: 8px;
+        border-color: rgb(60, 60, 60);
+        background-color: rgb(255, 255, 255);
+        padding-top: 16px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+    }
+
+    .a-button-secondary:hover, .a-button-secondary:active, .btn-secondary:hover, .btn-secondary:active {
+        color: rgb(255, 255, 255);
+        border-color: rgb(60, 60, 60);
+        background-color: rgb(60, 60, 60);
+    }
+
+    .a-button-tertiary, .cm-setting-button__button--button_tertiary, .cm-setting-button__instant-preview-button--button_tertiary, .btn-tertiary {
+        font-family: "Montserrat", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgb(60, 60, 60);
+        font-size: 16px;
+        line-height: 1.0;
+        font-weight: 600;
+        text-transform: none;
+        font-style: normal;
+        border-width: 0px;
+        border-radius: 8px;
+        border-color: rgba(0, 0, 0, 0);
+        background-color: rgba(255, 255, 255, 0);
+        padding-top: 16px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+    }
+
+    .a-button-tertiary:hover, .a-button-tertiary:active, .btn-tertiary:hover, .btn-tertiary:active {
+        color: rgb(60, 60, 60);
+        border-color: rgb(60, 60, 60);
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .document-sidebar {
+        position: absolute;
+    }
+
+    .cm-btn--brandcolor-inverted {
+        background: rgba(255, 255, 255, 1);
+        border-color: rgba(255, 255, 255, 1);
+        color: rgb(255, 203, 5);
+    }
+
+    .cm-btn--brandcolor-inverted:hover, .cm-btn--brandcolor-inverted:active, .cm-btn--brandcolor-inverted:focus {
+        background: rgb(255, 203, 5);
+        border-color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .block-dosanddonts-text__dos .block-dosanddonts-text__title, .block-dosanddonts-images__grid--dos .block-dosanddonts-images__grid__item__title {
+        border-color: rgba(8, 158, 27, 1.00);
+        color: rgba(8, 158, 27, 1.00);
+    }
+
+    .block-dosanddonts-text__donts .block-dosanddonts-text__title, .block-dosanddonts-images__grid--donts .block-dosanddonts-images__grid__item__title {
+        border-color: rgba(222, 105, 0, 1.00);
+        color: rgba(222, 105, 0, 1.00);
+    }
+
+    .block-dosanddonts-text__dos .block-dosanddonts-text__icon, .block-dosanddonts-text__donts .block-dosanddonts-text__icon {
+        font-size: 22px;
+    }
+
+    .block-dosanddonts-text__dos .block-dosanddonts-text__icon {
+        color: rgba(8, 158, 27, 1.00);
+    }
+
+    .block-dosanddonts-text__donts .block-dosanddonts-text__icon {
+        color: rgba(222, 105, 0, 1.00);
+    }
+
+    .block-dosanddonts-images__grid--donts .block-dosanddonts-images__grid__item__figure::after {
+        background-color: rgba(222, 105, 0, 1.00);
+    }
+
+    .block-dosanddonts-images__icon-do {
+        font-size: 22px;
+        color: rgba(8, 158, 27, 1.00);
+    }
+
+    .block-dosanddonts-images__icon-dont {
+        font-size: 22px;
+        color: rgba(222, 105, 0, 1.00);
+    }
+
+    .block-dosanddonts-images__title-container, .block-dosanddonts-text__title-container {
+        margin-bottom: 10px;
+    }
+
+    .a-main-font {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }</style>
+    <style class="document-appearance-css"
+           type="text/css">.o-header, .co-settings__fieldset--header-typostyles .cm-setting[data-type="typostyle"], .co-settings__fieldset--header-typostyles .cm-setting-typostyle__preview--documents, .co-settings__fieldset--header-typostyles .cm-setting-typostyle__preview--heading, .co-settings__fieldset--header-typostyles .cm-setting-typostyle__preview--subheading, .co-settings__headersize .cm-setting-headersize__size-head {
+        background: rgb(255, 255, 255);
+    }
+
+    .mod-document .o-header {
+        position: fixed;
+        z-index: 99;
+    }
+
+    .pm-draft {
+        position: fixed;
+        z-index: 99;
+    }
+
+    .js-o-page-content {
+        padding-top: 90px;
+    }
+
+    .js-o-page-content.fullscreen-on {
+        padding-top: 90px;
+    }
+
+    .mod-document .o-header.fullscreen-on {
+        top: 0;
+        width: 100%;
+    }
+
+    .js-container-document, .document-sidebar, .container--library {
+        padding-top: 90px;
+    }
+
+    .o-header {
+        background-image: url("https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoibGEtcG9zdGVcL2FjY291bnRzXC9mNVwvNDAwMDc1MVwvcHJvamVjdHNcLzJcL2Fzc2V0c1wvNTBcLzEzMTRcLzNkMzYwYTk5YmQ1NjlhYzgwNGM4ZDMzMmQwMjE1MjA0LTE2MTEzMDI4MjYucG5nIn0:la-poste:cWUxstTYS2ebnut4HFa1uvKAzs6j_Y_7Tk8VdwcMHWA?width={width}&rect=0,0,800,40&reference_width=800");
+    }
+
+    .m-navdocuments__item-link, .m-navdocuments__dropdown-item-toggle, .m-navdocuments__more-items .m-navdocuments__item-link, .m-navdocuments__item-toggle, .cm-setting-typostyle__preview--documents, .cm-setting-typostyle__label--documents, .m-nav-search__input, .nav-brandportal__item, .m-navdocuments__icon-more {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgba(60, 60, 60, 0.8);
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 1.3;
+        font-weight: 700;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+    }
+
+    .m-navdocuments__mobile-item-link, .m-navdocuments__mobile-document-group-toggle {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-weight: 700;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+    }
+
+    .m-navdocuments__open-document-setting {
+        color: rgba(60, 60, 60, 0.8);
+        border-color: rgba(60, 60, 60, 0.3);
+        background: transparent;
+    }
+
+    .m-navdocuments__open-document-setting:hover, .m-navdocuments__open-document-setting:active {
+        color: rgba(60, 60, 60, 1.00);
+        border-color: rgba(60, 60, 60, 0.3);
+    }
+
+    .m-navdocuments__activate {
+        color: rgba(60, 60, 60, 0.8);
+        border-color: rgba(60, 60, 60, 0.3);
+        background: transparent;
+    }
+
+    .m-navdocuments__activate:hover, .m-navdocuments__activate:active, .m-navdocuments__activate:focus {
+        color: rgba(60, 60, 60, 1.00);
+        border-color: rgba(60, 60, 60, 1.00);
+    }
+
+    .m-navdocuments__item--border-before {
+        border-color: rgba(60, 60, 60, 0.8);
+    }
+
+    .m-navdocuments__item-link.state-active, .m-navdocuments__item-toggle.state-active, .m-navdocuments__item-link:hover, .m-navdocuments__item-toggle:hover, .m-navdocuments__toggle-settings, .m-navdocuments__item--more:hover > .m-navdocuments__item-link, .nav-brandportal__item:hover {
+        color: rgba(60, 60, 60, 1.00);
+    }
+
+    .m-navdocuments__item-link.state-active, .m-navdocuments__item-toggle.state-active {
+        border-bottom: 2px solid;
+        border-color: rgba(60, 60, 60, 0.8);
+    }
+
+    .m-navdocuments__more-items .m-navdocuments__item-link.state-active, .m-navdocuments__more-items .m-navdocuments__item-toggle.state-active {
+        border-bottom: none;
+    }
+
+    .m-navdocuments__toggle {
+        color: rgba(60, 60, 60, 0.8);
+    }
+
+    .m-navdocuments__toggle:hover, .m-navdocuments__toggle:active {
+        color: rgba(60, 60, 60, 1.00);
+    }
+
+    .o-header__logo-wrapper {
+        left: 0px;
+        top: -15px;
+    }
+
+    .o-header__logo-upload {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 14px;
+        line-height: 1.3;
+        font-weight: 700;
+        text-transform: none;
+        font-style: normal;
+    }
+
+    .m-nav-search__icon, .m-nav-search__input, .nav-brandportal__item, .nav-tools__lang-toggle, .nav-tools__print {
+        color: rgba(60, 60, 60, 0.8);
+    }
+
+    .mod-c-brand-portal-link:hover {
+        color: rgba(60, 60, 60, 1.00);
+    }
+
+    .m-nav-search__icon:hover, .m-nav-search__icon-active, .nav-tools__lang-toggle:hover, .nav-tools__print:hover {
+        color: rgba(60, 60, 60, 1.00);
+    }
+
+    .m-nav-search__input {
+        box-shadow: inset 0px 0px 0px 1px rgba(60, 60, 60, 0.5);
+        background: rgba(255, 255, 255, 1);
+        color: black;
+    }
+
+    .m-nav-search__icon-active {
+        color: rgba(60, 60, 60, 1.00);
+    }
+
+    .editor-enabled .o-header__logo-wrapper {
+        border: 1px dashed rgba(60, 60, 60, 0.8);
+        color: rgba(60, 60, 60, 0.8);
+    }
+
+    .editor-enabled .o-header__logo-wrapper:hover {
+        border-color: rgba(60, 60, 60, 1.00);
+        color: rgba(60, 60, 60, 1.00);
+    }
+
+    .cm-setting-typostyle__label--heading, .cm-setting-typostyle__preview--heading, .header-hero__heading {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgba(0, 0, 0, 0.8);
+        letter-spacing: normal;
+        font-size: 48px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .cm-setting-typostyle__label--subheading, .cm-setting-typostyle__preview--subheading, .header-hero__subheading {
+        font-family: "Roboto", "Mier B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 1.25rem;
+        letter-spacing: normal;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: none;
+        font-style: normal;
+        text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .co-settings__fieldset--header-typostyles .cm-setting-typostyle__preview--heading, .co-settings__fieldset--header-typostyles .cm-setting-typostyle__preview--documents, .co-settings__fieldset--subheader-typostyles .cm-setting-typostyle__preview--subheading {
+        padding: 10px;
+    }
+
+    .cm-setting-typostyle__label--heading, .cm-setting-typostyle__preview--heading, .cm-setting-typostyle__label--subheading, .cm-setting-typostyle__preview--subheading {
+        line-height: 1;
+        margin: 0;
+    }
+
+    .o-header__logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .o-library__search {
+        border-radius: 26px;
+    }
+
+    .o-library__search-btn {
+        border-radius: 26px;
+    }
+
+    .o-librarymain__tile-content--colored {
+        background: rgb(255, 203, 5);
+        color: rgba(255, 255, 255, 1);
+    }</style>
+
+
+    <link href="./css/cl5w9yz1l00010lw8dvragbie.1ce4a571acf40718ba0a02dc3c6eb82dfbcc7bf4c3633080c967e054b665978e.css"
+          onload="this.setAttribute('data-loaded', 'true')"
+          rel="stylesheet"
+          type="text/css"/>
+
+    <link href="./css/cl5w86f8700010sw8yvfasdhx.cd697e0b3a640e0e349bcc645e623e34161d898ab2ab8d5bc7448fb0278ba76a.css"
+          onload="this.setAttribute('data-loaded', 'true')"
+          rel="stylesheet"
+          type="text/css"/>
+
+    <link href="https://frontify-artifacts.com/cldju6bkp0001a8w43x1fgzzu.9569eb492bf7f04ac8e87c55b7bd17a0ed33e513bc51a0c193c6f72bbc51fdee.css"
+          onload="this.setAttribute('data-loaded', 'true')"
+          rel="stylesheet"
+          type="text/css"/>
+
+
+    <!-- lazy load webfonts -->
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script type="text/javascript">
+        var data = {"provider": {"google": {"families": ["Montserrat:400,100", "Montserrat:400,100", "Montserrat:400,200", "Montserrat:400,200", "Montserrat:400,300", "Montserrat:400,300", "Montserrat:400", "Montserrat:400,", "Montserrat:400,500", "Montserrat:400,500", "Montserrat:400,600", "Montserrat:400,600", "Montserrat:400,700", "Montserrat:400,700", "Montserrat:400,800", "Montserrat:400,800", "Montserrat:400,900", "Montserrat:400,900", "Roboto:400,100", "Roboto:400,100", "Roboto:400,300", "Roboto:400,300", "Roboto:400", "Roboto:400,", "Roboto:400,500", "Roboto:400,500", "Roboto:400,700", "Roboto:400,700", "Roboto:400,900", "Roboto:400,900", "Roboto:400", "Roboto:400,700", "Montserrat:400,700", "Montserrat:400,600"]}}};
+        for (p in data.provider) {
+            if (p === 'google') {
+                var request = {'google': data.provider[p]};
+                WebFont.load(request);
+            } else if (p === 'typekit') {
+                for (id in data.provider[p].id) {
+                    var token = data.provider[p].id[id];
+                    var request = {};
+                    request[p] = {id: token};
+                    WebFont.load(request);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<header class="mod mod-header o-header js-o-header header-size-s" id="top">
+    <div class="container row o-header__container">
+        <div class="row o-header__upper">
+            <div class="o-header__main-logo js-o-header__main-logo logo-available">
+                <a class="o-header__logo-wrapper btn-logo btn-upload btn-upload-logo js-o-header__logo-link"
+                   href="/hub/2">
+
+                    <img alt="Go to Solaris"
+                         class="js-o-header__logo o-header__logo"
+                         data-test-id="logo"
+                         src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoibGEtcG9zdGVcL2ZpbGVcL1ZmOXNjelNkem9tTWFwZWZNRGEyLnBuZyJ9:la-poste:TU_fTPI7v_BVo2EbCe-t6vLd7jWv13SmyAYiRz3K-uE?width={width}">
+
+
+                    <label class="o-header__logo-upload" for="o-header__fileupload-logo">
+                        Upload Logo
+                    </label>
+                </a>
+            </div>
+
+            <nav aria-label="Brand documents" class="mod mod-navdocuments" role="navigation">
+                <div class="m-navdocuments m-navdocuments--desktop js-m-navdocuments">
+                    <ul class="m-navdocuments__list-main">
+                        <li class="cm-btn-dropdown m-navdocuments__item js-m-navdocuments__item state-active"
+                            data-document-id="21"><a class="m-navdocuments__item-link state-active"
+                                                     data-test-id="navigation-item-link"
+                                                     href="/index.html"><span
+                                class="m-navdocuments__item-link-text">Vue d'ensemble</span></a></li>
+                        <li class="cm-btn-dropdown m-navdocuments__item js-m-navdocuments__item" data-document-id="2"><a
+                                class="m-navdocuments__item-link" data-test-id="navigation-item-link"
+                                href="/guidelines.html"><span
+                                class="m-navdocuments__item-link-text">Guidelines</span></a>
+                        </li>
+                        <li class="cm-btn-dropdown m-navdocuments__item js-m-navdocuments__item" data-document-id="3"><a
+                                class="m-navdocuments__item-link" data-test-id="navigation-item-link"
+                                href="/composants.html"><span
+                                class="m-navdocuments__item-link-text">Composants</span></a>
+                        </li>
+                        <li class="cm-btn-dropdown m-navdocuments__item js-m-navdocuments__item" data-document-id="4"><a
+                                class="m-navdocuments__item-link" data-test-id="navigation-item-link"
+                                href="/Patterns.html"><span class="m-navdocuments__item-link-text">Patterns</span></a>
+                        </li>
+                        <li class="cm-btn-dropdown m-navdocuments__item js-m-navdocuments__item" data-document-id="13">
+                            <a class="m-navdocuments__item-link" data-test-id="navigation-item-link"
+                               href="/ressources.html"><span
+                                    class="m-navdocuments__item-link-text">Ressources</span></a>
+                        </li>
+                    </ul>
+                    <div class="m-navdocuments__actions">
+                        <button aria-label="Add documents and libraries"
+                                class="cm-btn cm-btn--link cm-btn--lg m-navdocuments__open-document-setting js-m-navdocuments__open-document-setting"
+                                data-event="navDocumentsNavigation"
+                                title="Add documents and libraries"><span
+                                class="ca-icon ca-icon--sm m-navdocuments__icon"
+                                data-test-id="icon-diagram-tree"><span><svg
+                                class="tw-flex tw-items-center tw-justify-center tw-fill-current" height="16"
+                                name="IconDiagramTree16"
+                                width="16"
+                                xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd"
+                                                                         d="M12.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m0 1a1.5 1.5 0 1 0-1.415-2H10a2 2 0 0 0-2 2v2.5H6v-2A1.5 1.5 0 0 0 4.5 4h-1A1.5 1.5 0 0 0 2 5.5v5A1.5 1.5 0 0 0 3.5 12h1A1.5 1.5 0 0 0 6 10.5v-2h2V11a2 2 0 0 0 2 2h1.085a1.5 1.5 0 1 0 0-1H10a1 1 0 0 1-1-1V8.5h2.085a1.5 1.5 0 1 0 0-1H9V5a1 1 0 0 1 1-1h1.085A1.5 1.5 0 0 0 12.5 5m-9 0h1a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5M13 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"
+                                                                         fill="currentColor"
+                                                                         fill-rule="evenodd"></path></svg></span></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-main__right js-header-main__right">
+                <div class="mod mod-c-brand-portal-link c-brand-portal-link"></div>
+
+                <nav aria-label="Language and tools" class="nav-tools row">
+                    <ul>
+
+
+                        <li class="nav-tools__item">
+                            <div aria-hidden="true" class="js-language-switch-item tw-hidden">
+                                <div class="nav-tools__item-inner nav-tools__lang-toggle js-language-switch"
+                                     data-base-link="/hub/2" data-current-language=""
+                                     data-document-has-library-mode="" data-document-id="21"
+                                     data-document-slug="vue-d-ensemble"
+                                     data-private-or-viewer-and-not-brandportal="1">
+                                    <div data-test-id="language-switch">
+                                        <button aria-expanded="false" aria-haspopup="true"
+                                                aria-label="Change Guideline language" class="tw-relative"
+                                                data-test-id="language-switch-trigger"
+                                                type="button"><span><svg
+                                                class="tw-flex tw-items-center tw-justify-center tw-fill-current"
+                                                height="24" name="IconSpeechBubbleEmpty24"
+                                                width="24"
+                                                xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd"
+                                                                                         d="M8 16.544v3.426l4.09-3.12.403-.306H19a1.5 1.5 0 0 0 1.5-1.5V7A1.5 1.5 0 0 0 19 5.5H5A1.5 1.5 0 0 0 3.5 7v8.044a1.5 1.5 0 0 0 1.5 1.5zm5 1.5h6a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8.044a3 3 0 0 0 3 3h1.5v2.936a1 1 0 0 0 1.606.795z"
+                                                                                         fill="currentColor"
+                                                                                         fill-rule="evenodd"></path></svg></span><span
+                                                class="tw-hidden">Current language </span><span
+                                                class="tw-absolute tw-top-[4px] tw-left-1/2 tw--translate-x-1/2 tw-text-[0.625rem] tw-font-bold"></span>
+                                        </button>
+                                        <nav class="tw-relative tw-bg-base tw-rounded tw-py-2 tw-shadow-mid tw-z-[120000] before:tw-pointer-events-none before:tw-block before:tw-rounded before:tw-top-0 before:tw-left-0 before:tw-bg-transparent before:tw-absolute before:tw-w-full before:tw-h-full before:tw-shadow-inner-line-x-strong tw-hidden"
+                                             data-popper-escaped="true" data-popper-placement="bottom-start"
+                                             data-popper-reference-hidden="true"
+                                             data-test-id="menu" role=""
+                                             style="position: fixed; inset: 0px auto auto 0px; transform: translate3d(0px, 8px, 0px);">
+                                            <ol class="tw-list-none">
+                                                <div class="tw-w-full tw-text-left tw-py-2 tw-px-5"
+                                                     data-test-id="menu-headline"><span
+                                                        class="tw-font-body tw-max-w-full tw-font-medium tw-text-body-medium tw-no-underline tw-text-text tw-break-normal tw-whitespace-normal tw-overflow-visible"
+                                                        data-test-id="text">Available Languages</span>
+                                                </div>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <div class="mod mod-navsearch m-nav-search">
+                    <div id="guideline-search">
+                        <button aria-haspopup="dialog" aria-label="Search"
+                                class="m-nav-search__icon js-m-nav-search__icon" data-test-id="guideline-search-button"
+                                title="Search"><i
+                                class="js-m-nav-search__icon-element icon-search2"></i></button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="mod mod-settings-header o-settings-header" data-mode="default">
+                <div class="cm-btn-dropdown">
+                    <div class="js-cm-btn-dropdown__toggle js-o-settings-header__toggle o-settings-header__toggle-wrap"
+                         data-event="settingsHeader">
+                        <button class="o-settings-header__toggle">Header Settings</button>
+                    </div>
+                    <div class="cm-btn-dropdown__menu cm-btn-dropdown__menu--center cm-btn-dropdown__menu--below cm-btn-dropdown__menu--min-width-360 js-cm-btn-dropdown__menu js-o-settings-header__menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
